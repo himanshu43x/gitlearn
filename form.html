@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          #first_form {
+            border: 3px dashed rgb(229, 22, 22);
+            margin-right: 300px;
+            padding-left:15px;
+            padding-top: 10px;
+            padding-bottom:100px ;
+            color: rgb(128, 0, 92);
+            background-color: #ffff00af;
+          
+        }
+         #button {
+          
+            margin-right: 1px;
+            padding-left:5px;
+            padding-top: 5px;
+            padding-bottom:5px ;
+            color: rgb(215, 20, 20);
+            background-color: #9500ffaf;
+            margin-left: 140px;
+            
+          
+        }
+    </style>
+
+</head>
+<body>
+   <!-- action to define data transformation-->
+  <h1>This is a html form</h1>
+  <form id="first_form"action="YOUR_GOOGLE_SCRIPT_URL" method="post" >
+    <label for="firstName" > First name :</label>
+    <input type="text" id="firstName" placeholder=" your name " name="Your name" >
+    <br>
+    <br>
+    <label for="userPass">Enter your password: </label>
+    <input type="password" id="userPass" placeholder="Your password" name="userPass">
+    <br><br>
+    <label for="instaLink"> Enter your linkedin link:</label>
+    <input type="url" id="instaLink" placeholder="your link here " name="instaLink">
+    <br><br>
+    <label for="Num" > Contact Number :</label>
+    <input type="tel" id = "Num" placeholder=" eg: +91 6393630995" name="Num">
+    <br>
+    <br>
+    <label for="userEmail">User Email:</label>
+    <input type="email" id="userEmail" placeholder="abc@gmail.com" name="userEmail"/>
+    <br>
+    <br>
+    
+     <label for="userDob">User Dob:</label>
+    <input type="date" id="userDob"  name="userDob" />
+    <br>
+    <p>Select Your Skill:</p>
+    <input type="checkbox" id="java" name="userSkill" value="java" >
+    <label for="java"> JAVA </label>
+    
+    <br>
+    <input type="checkbox" id="html" name="userSkill" value="html">
+    <label for="html"> HTML </label>
+    
+    <br>
+    <input type="checkbox" id="css" name="userSkill" value="css" >
+    <label for="css"> CSS</label>
+    
+    <br>
+    <input type="checkbox" id="node.js" name="userSkill" value="node.js" >
+    <label for="node.js"> NODE.JS</label>
+
+    <br>
+    <input type="checkbox" id="python" name="userSkill" value="python">
+    <label for="python"> PYTHON</label>
+
+
+    <p> Select Your Gender:</p>
+    <label for="femaleGender"> Female</label>
+    <input type="radio" id="femaleGender" name="gender" value="femaleGender"/>
+    <label for="maleGender"> Male </label>
+    <input type="radio" id="maleGender" name="gender" value="maleGender">
+     <label for="otherGender"3ed> Other </label>
+    <input type="radio" id="otherGender" name="gender" value="otherGender"> 
+    <br><br><br>
+    <label for="location"> Select Your Work Location</label>
+    <select name="location" id="location">
+      <option value="" disabled selected > select your state </option>
+      <option value="uttarPradesh"> Uttar pradesh</option>
+      <option value="delhi"> Delhi</option>
+      <option value="pune"> Pune </option>
+      <option value="noida"> Noida</option>
+      <br><br>
+    </select>
+    <br>
+    <br>
+     <button id="button" type="submit"> sumbit</button>
+    
+
+  </form>
+  
+</body>
+</html>
